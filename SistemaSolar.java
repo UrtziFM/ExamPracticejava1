@@ -9,10 +9,10 @@ public class SistemaSolar {
             private  List<Planetas> planets;
 
         public SistemaSolar(){
-
+        
         }
 
-        private void bigBang(){
+        public void bigBang(){
 
             sun = new Sol(700, 15000, 149600);
 
@@ -29,10 +29,35 @@ public class SistemaSolar {
     
             }
 
-        private void biggestPlanet(){
+        // crear un metodo que revise la lista de planetas y busque el planeta con radioEcuato mas grandes  
+        // y lo imprima en pantalla
+        
+        public void printBiggestPlanet(){
 
-            // crear un metodo que revise la lista de planetas y busque el planeta con radioEcuato mas grandes  
-            
+            Planetas biggestPlanet = null;
+
+            for (Planetas planet : planets) {
+                if (biggestPlanet == null || planet.getRadioEcuato() > biggestPlanet.getRadioEcuato()) {
+                    biggestPlanet = planet;
+                }
+            }
+
+            System.out.println("El planeta con el radio ecuatorial mas grande es: " + biggestPlanet.getNombrePlaneta());
+        }
+
+        // crear un metodo que solicite al usuario el nombre de un planeta y le diga su distancia al sol
+        // si el planeta no existe, debe imprimir un mensaje de error
+
+        public void printDistanceToSun(String planetName){
+
+            for (Planetas planet : planets) {
+                if (planet.getNombrePlaneta().equals(planetName)) {
+                    System.out.println("La distancia del planeta " + planetName + " al sol es: " + planet.getDistanciaSol());
+                    return;
+                }
+            }
+
+            System.out.println("El planeta " + planetName + " no existe");
         }
 }
 
