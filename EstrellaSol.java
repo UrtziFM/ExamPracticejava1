@@ -7,7 +7,7 @@ public class EstrellaSol extends EstrellaAbstract {
 
         // Constructor de la clase hija
         public EstrellaSol(double radioEcuato, double temperaturaNucleo, double distanciaTierra){
-            super(radioEcuato, temperaturaNucleo, distanciaTierra);
+            super();
         }
 
             // Metodos de la clase hija

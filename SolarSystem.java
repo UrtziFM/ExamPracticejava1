@@ -1,11 +1,10 @@
-import java.util.List;
 import java.util.ArrayList;
 
 public class SolarSystem {
 
     // Atributos de la clase SistemaSolar de agregación debil de las clases EstrellaSol y Planetas
     private EstrellaSol sun;
-    private List<Planetas> planets;
+    private ArrayList<Planetas> planets;
 
         // Constructor de la clase SistemaSolar
         public SolarSystem(){
@@ -43,15 +42,15 @@ public class SolarSystem {
                 System.out.println("El planeta con el radio ecuatorial mas grande es: " + biggestPlanet.getNombrePlaneta());
             }
 
-            public void earthDistance(String planetName){
+            public void earthDistance(String planetName) {
 
                 for (Planetas planet : planets) {
                     if (planet.getNombrePlaneta().equals(planetName)){
                         System.out.println("La distancia a la tierra de " + planet.getNombrePlaneta() + " es: " + planet.getDistanciaTierra());
+                    } else {
+                        throw new IllegalArgumentException("No existe planeta");
                     }
                 }
-
-                throw new IllegalStateException("No existe el planeta " + planetName + " en el sistema solar");
             }
     
 }

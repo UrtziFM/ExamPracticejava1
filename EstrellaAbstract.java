@@ -1,15 +1,9 @@
 public abstract class EstrellaAbstract {
 
-    // Atributos de la clase abstracta que hereden las clases hijas
-    private double radioEcuato;
-    private double temperaturaNucleo;
-    private double distanciaTierra;
+    // En la clase abstracta no se definen los atributos sino en las clases hijas
 
     // Constructor de la clase abstracta que hereden las clases hijas
-    public EstrellaAbstract(double radioEcuato, double temperaturaNucleo, double distanciaTierra){
-        this.radioEcuato = radioEcuato;
-        this.temperaturaNucleo = temperaturaNucleo;
-        this.distanciaTierra = distanciaTierra;
+    public EstrellaAbstract(){
 
     }
 
