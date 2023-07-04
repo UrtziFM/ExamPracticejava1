@@ -67,10 +67,4 @@ public class Planetas {
         this.distanciaSol = distanciaSol;
     }
 
-    public String toString(){
-        return "Nombre del Planeta: " + this.nombrePlaneta + "\nNumero de Satelites: " + this.numeroSatelites + "\nRadio Ecuatorial: " 
-        + this.radioEcuato + "\nTemperatura Media Diurna: " + this.temperaturaMediaDiurna + "\nDistancia a la Tierra: " 
-        + this.distanciaTierra + "\nDistancia al Sol: " + this.distanciaSol;
-    }
-
 }

@@ -8,6 +8,10 @@ public class EstrellaSol extends EstrellaAbstract {
         // Constructor de la clase hija
         public EstrellaSol(double radioEcuato, double temperaturaNucleo, double distanciaTierra){
             super();
+            this.radioEcuato = radioEcuato;
+            this.temperaturaNucleo = temperaturaNucleo;
+            this.distanciaTierra = distanciaTierra;
+
         }
 
             // Metodos de la clase hija
