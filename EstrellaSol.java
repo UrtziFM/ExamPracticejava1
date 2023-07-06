@@ -11,7 +11,6 @@ public class EstrellaSol extends EstrellaAbstract {
             this.radioEcuato = radioEcuato;
             this.temperaturaNucleo = temperaturaNucleo;
             this.distanciaTierra = distanciaTierra;
-
         }
 
             // Metodos de la clase hija
